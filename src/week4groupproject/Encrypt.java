@@ -49,7 +49,9 @@ public class Encrypt {
 
 	private static void getEncryptedMessage(Scanner sc, Encrypt inputMessage) {
 		System.out.print("Input message for ENCRYPTION: ");
-		String messageEntered = sc.next();
+		sc.nextLine(); 
+		String messageEntered = sc.nextLine();
+		//System.out.println(messageEntered);
 		String encryptedMessage = inputMessage.encode(messageEntered);
 		System.out.println("Your encrypted message:  " + encryptedMessage);
 	}
